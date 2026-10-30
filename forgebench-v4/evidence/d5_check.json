@@ -1,0 +1,6 @@
+{
+  "defect": "D5 required_annotations schema",
+  "tasks_checked": 401,
+  "non_annotation_entries": [],
+  "conclusion": "closed in v3 schema (annotations live in eval_criteria.required_annotations, all entries start with '@')"
+}

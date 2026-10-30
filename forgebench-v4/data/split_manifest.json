@@ -1,0 +1,61 @@
+{
+  "dataset": "ComerX/forgebench-v4",
+  "generated": "2026-10-29",
+  "total": 411,
+  "baseline_v2_rows": 130,
+  "v3_rows": 401,
+  "new_rows_v4": 10,
+  "schema_validator": "stage9/schema-v4.json (v3 + gametest module enum)",
+  "schema_errors": 0,
+  "evaluator": "harness/ast_eval.py (v3 rules; 32/32 rule tests green with JDK 21.0.13)",
+  "evaluator_self_check_pass": 411,
+  "evaluator_self_check_note": "goldens evaluated as answers: syntax_pass=411/411, L2_static PASS=411/411, hallucinated_api=0",
+  "exact_golden_duplicates": [],
+  "near_dup_pairs_note": "v3 merge reported 22 family-linked near-dup pairs; unchanged by v4 (GT tasks are new, no near-dups detected by exact scan; MinHash re-run documented as future work)",
+  "task_kind_distribution": {
+    "generate": 333,
+    "migrate": 37,
+    "diagnose": 20,
+    "redteam_malformed_resource": 4,
+    "redteam_regression": 12,
+    "redteam_wrong_loader": 4,
+    "redteam_adversarial_api": 1
+  },
+  "module_distribution": {
+    "api": 75,
+    "mixin": 35,
+    "migration": 20,
+    "debug": 20,
+    "build": 20,
+    "porting": 20,
+    "gui": 41,
+    "render": 53,
+    "resources": 37,
+    "gameplay": 44,
+    "network": 36,
+    "gametest": 10
+  },
+  "loader_distribution": {
+    "neoforge": 354,
+    "forge": 57
+  },
+  "version_distribution": {
+    "1.21.1": 354,
+    "1.20.1": 57
+  },
+  "task_family_count": 85,
+  "fix_of_links": 130,
+  "splits_policy": {
+    "public_dev.jsonl": "unchanged from v3 (immutable)",
+    "public_eval.jsonl": "unchanged from v3 (immutable)",
+    "private_eval.jsonl": "moved OUT of the public bundle; published only in the private repo ComerX/forgebench-v4-private",
+    "gametest_tasks": "GT_001..GT_010 added to the full pool; split promotion deferred to the next versioned change"
+  },
+  "changes_vs_v3": [
+    "13 goldens fixed with evidence-backed API corrections (stage4/fix_log.jsonl)",
+    "FORGE_API_008 eval_criteria: stale @CapabilityInject requirement replaced by @Mod.EventBusSubscriber",
+    "10 synthetic GameTest tasks added (synthetic=true, evidence-backed)",
+    "schema: module enum + 'gametest'",
+    "contamination vs SFT-v2.1.0-rc2-train and CPT-v9 measured (stage5)"
+  ]
+}

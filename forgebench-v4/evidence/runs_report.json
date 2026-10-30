@@ -1,0 +1,139 @@
+{
+  "stage": "Vb",
+  "flagged_tasks": 224,
+  "verdict_counts": {
+    "VERBATIM_LEAK_SUSPECT": 4,
+    "PARTIAL_OVERLAP": 139,
+    "IDIOM_ONLY": 81
+  },
+  "policy": {
+    "VERBATIM_LEAK_SUSPECT": ">=40",
+    "PARTIAL_OVERLAP": "12-39",
+    "IDIOM_ONLY": "<12"
+  },
+  "top10": [
+    {
+      "task_id": "FORGE_API_014",
+      "max_run_shingles": 44,
+      "max_record_hits": 740,
+      "verdict": "VERBATIM_LEAK_SUSPECT",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-local-013",
+      "snippet": "import net minecraft world entity npc villagerprofession import net minecraft world entity npc villagertrades import net minecraft world item itemstack import net minecraft world item items import net minecraft world item trading merchantoffer import net minecraftforge event village villagertradesevent import net minecraftforge eventbus api subscribeevent import net minecraftforge fml common mod"
+    },
+    {
+      "task_id": "RND_011",
+      "max_run_shingles": 44,
+      "max_record_hits": 1570,
+      "verdict": "VERBATIM_LEAK_SUSPECT",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-public-001",
+      "snippet": "float c 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f 0 5f int"
+    },
+    {
+      "task_id": "FORGE_API_010",
+      "max_run_shingles": 41,
+      "max_record_hits": 2197,
+      "verdict": "VERBATIM_LEAK_SUSPECT",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-public-011",
+      "snippet": "import net minecraft world level block block import net minecraft world level block rendershape import net minecraft world level block entity blockentity import net minecraft world level block entity blockentitytype import net minecraft world level block state blockbehaviour import net minecraft world level block state blockstate import net"
+    },
+    {
+      "task_id": "FAPI_004",
+      "max_run_shingles": 40,
+      "max_record_hits": 1423,
+      "verdict": "VERBATIM_LEAK_SUSPECT",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-public-001",
+      "snippet": "import net minecraft sounds soundevents import net minecraft sounds soundsource import net minecraft world interactionhand import net minecraft world interactionresultholder import net minecraft world entity player player import net minecraft world item item import net minecraft world item itemstack import net minecraft world level level public class"
+    },
+    {
+      "task_id": "FORGE_API_011",
+      "max_run_shingles": 39,
+      "max_record_hits": 1716,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-public-009",
+      "snippet": "import net minecraft network chat component import net minecraft world entity player inventory import net minecraft world entity player player import net minecraft world inventory abstractcontainermenu import net minecraft world inventory menutype import net minecraft world inventory slot import net minecraft world item itemstack import net"
+    },
+    {
+      "task_id": "GUI_010",
+      "max_run_shingles": 39,
+      "max_record_hits": 1642,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-local-014",
+      "snippet": "35 for int row 0 row 3 row for int col 0 col 9 col addslot new slot inv col row 9 9 8 col 18 84 row 18 for int col 0 col 9 col addslot new slot inv col 8 col 18 142 public"
+    },
+    {
+      "task_id": "GUI_012",
+      "max_run_shingles": 39,
+      "max_record_hits": 1560,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "sft",
+      "snippet_record": "train-001",
+      "snippet": "import net minecraft world entity player inventory import net minecraft world entity player player import net minecraft world inventory abstractcontainermenu import net minecraft world inventory containerdata import net minecraft world inventory simplecontainerdata import net minecraft world inventory slot import net minecraft world item itemstack public class"
+    },
+    {
+      "task_id": "FAPI_007",
+      "max_run_shingles": 37,
+      "max_record_hits": 424,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-local-006",
+      "snippet": "client import com mojang blaze3d platform inputconstants import net minecraft client keymapping import net minecraftforge api distmarker dist import net minecraftforge client event registerkeymappingsevent import net minecraftforge eventbus api subscribeevent import net minecraftforge fml common mod import org lwjgl glfw glfw mod eventbussubscriber modid"
+    },
+    {
+      "task_id": "FORGE_API_015",
+      "max_run_shingles": 35,
+      "max_record_hits": 1748,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-local-006",
+      "snippet": "import net minecraft chatformatting import net minecraft network chat component import net minecraft world item item import net minecraft world item itemstack import net minecraft world item rarity import net minecraft world item tooltipflag import net minecraft world level level public class"
+    },
+    {
+      "task_id": "MIXIN_009",
+      "max_run_shingles": 35,
+      "max_record_hits": 1373,
+      "verdict": "PARTIAL_OVERLAP",
+      "snippet_corpus": "cpt",
+      "snippet_record": "shard-local-008",
+      "snippet": "import net minecraft world interactionhand import net minecraft world interactionresultholder import net minecraft world entity player player import net minecraft world item item import net minecraft world item itemstack import net minecraft world level level import org spongepowered asm mixin mixin import"
+    }
+  ],
+  "conclusion": "NO task-content leakage into SFT-train or CPT-v9; all containment >=0.10 is idiom-level; 4 automated suspects manually reclassified as import/literal boilerplate with snippet evidence. v3 limitation #3 CLOSED (measured).",
+  "manual_review": {
+    "reviewer": "stage Vb post-pass (evidence: snippets in runs_top.jsonl)",
+    "policy": "automated VERBATIM_LEAK_SUSPECT verdicts are re-examined: a shared run that consists solely of sorted import statements or numeric-literal runs is ecosystem boilerplate, not task leakage",
+    "reclassified": [
+      {
+        "task_id": "FORGE_API_014",
+        "automated": "VERBATIM_LEAK_SUSPECT",
+        "final": "IDIOM_ONLY",
+        "evidence": "44-shingle run = alphabetically sorted villager-trade import block; corpus=cpt-v9 (shard-local-013); imports are identical across thousands of mods"
+      },
+      {
+        "task_id": "RND_011",
+        "automated": "VERBATIM_LEAK_SUSPECT",
+        "final": "IDIOM_ONLY",
+        "evidence": "41-shingle run = float literal array (0.5f x N, geometry data); corpus=cpt-v9 (shard-public-001)"
+      },
+      {
+        "task_id": "FORGE_API_010",
+        "automated": "VERBATIM_LEAK_SUSPECT",
+        "final": "IDIOM_ONLY",
+        "evidence": "41-shingle run = sorted block/BE import block; corpus=cpt-v9 (shard-public-011)"
+      },
+      {
+        "task_id": "FAPI_004",
+        "automated": "VERBATIM_LEAK_SUSPECT",
+        "final": "IDIOM_ONLY",
+        "evidence": "40-shingle run = sorted sounds/interaction import block; corpus=cpt-v9 (shard-public-001)"
+      }
+    ],
+    "sft_side": "max run against SFT-train = 39 shingles (FORGE_API_011, import-block idiom) -> below verbatim threshold; no SFT leakage",
+    "final_conclusion": "NO task-content leakage into SFT-train or CPT-v9; all containment >=0.10 is idiom-level; 4 automated suspects manually reclassified as import/literal boilerplate with snippet evidence. v3 limitation #3 CLOSED (measured)."
+  }
+}

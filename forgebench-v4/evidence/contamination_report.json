@@ -1,0 +1,3623 @@
+{
+  "stage": "V",
+  "method": "8-gram word shingles, containment = hits/task_shingles",
+  "thresholds": {
+    "report": 0.1,
+    "quarantine_candidate": 0.5
+  },
+  "sft": {
+    "files": 45,
+    "records": 7422,
+    "corpus_shingles": 17528344,
+    "max_containment": {
+      "task_id": "API_002",
+      "task_family": "api-v2",
+      "corpus": "sft-v2.1.0-rc2/train",
+      "task_shingles": 163,
+      "hit_shingles": 83,
+      "containment": 0.5092
+    },
+    "tasks_ge_0.10": [
+      {
+        "task_id": "API_002",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 163,
+        "hit_shingles": 83,
+        "containment": 0.5092
+      },
+      {
+        "task_id": "GUI_010",
+        "task_family": "gui-menu-sync",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 319,
+        "hit_shingles": 152,
+        "containment": 0.4765
+      },
+      {
+        "task_id": "MIXIN_010",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 129,
+        "hit_shingles": 61,
+        "containment": 0.4729
+      },
+      {
+        "task_id": "GUI_012",
+        "task_family": "gui-menu-sync",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 294,
+        "hit_shingles": 137,
+        "containment": 0.466
+      },
+      {
+        "task_id": "MIXIN_002",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 142,
+        "hit_shingles": 66,
+        "containment": 0.4648
+      },
+      {
+        "task_id": "MIX_101",
+        "task_family": "mixin-inject",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 127,
+        "hit_shingles": 58,
+        "containment": 0.4567
+      },
+      {
+        "task_id": "MIXIN_017",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 189,
+        "hit_shingles": 85,
+        "containment": 0.4497
+      },
+      {
+        "task_id": "MIXIN_009",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 173,
+        "hit_shingles": 77,
+        "containment": 0.4451
+      },
+      {
+        "task_id": "MIXIN_011",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 177,
+        "hit_shingles": 77,
+        "containment": 0.435
+      },
+      {
+        "task_id": "FAPI_004",
+        "task_family": "fapi-item",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 159,
+        "hit_shingles": 69,
+        "containment": 0.434
+      },
+      {
+        "task_id": "FORGE_API_014",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 221,
+        "hit_shingles": 95,
+        "containment": 0.4299
+      },
+      {
+        "task_id": "API_013",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 147,
+        "hit_shingles": 63,
+        "containment": 0.4286
+      },
+      {
+        "task_id": "FORGE_API_018",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 383,
+        "hit_shingles": 163,
+        "containment": 0.4256
+      },
+      {
+        "task_id": "API_008",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 211,
+        "hit_shingles": 89,
+        "containment": 0.4218
+      },
+      {
+        "task_id": "MIXIN_001",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 98,
+        "hit_shingles": 41,
+        "containment": 0.4184
+      },
+      {
+        "task_id": "FAPI_016",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 107,
+        "hit_shingles": 43,
+        "containment": 0.4019
+      },
+      {
+        "task_id": "FORGE_API_016",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 219,
+        "hit_shingles": 88,
+        "containment": 0.4018
+      },
+      {
+        "task_id": "FORGE_API_015",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 172,
+        "hit_shingles": 69,
+        "containment": 0.4012
+      },
+      {
+        "task_id": "API_005",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 139,
+        "hit_shingles": 55,
+        "containment": 0.3957
+      },
+      {
+        "task_id": "MIXIN_003",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 139,
+        "hit_shingles": 55,
+        "containment": 0.3957
+      },
+      {
+        "task_id": "API_009",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 181,
+        "hit_shingles": 71,
+        "containment": 0.3923
+      },
+      {
+        "task_id": "FAPI_034",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 92,
+        "hit_shingles": 36,
+        "containment": 0.3913
+      },
+      {
+        "task_id": "MIX_110",
+        "task_family": "mixin-signature",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 169,
+        "hit_shingles": 66,
+        "containment": 0.3905
+      },
+      {
+        "task_id": "API_016",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 131,
+        "hit_shingles": 51,
+        "containment": 0.3893
+      },
+      {
+        "task_id": "FAPI_001",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 103,
+        "hit_shingles": 40,
+        "containment": 0.3883
+      },
+      {
+        "task_id": "FORGE_API_011",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 686,
+        "hit_shingles": 266,
+        "containment": 0.3878
+      },
+      {
+        "task_id": "FAPI_015",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 124,
+        "hit_shingles": 48,
+        "containment": 0.3871
+      },
+      {
+        "task_id": "API_018",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 207,
+        "hit_shingles": 80,
+        "containment": 0.3865
+      },
+      {
+        "task_id": "MIG_004",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 166,
+        "hit_shingles": 64,
+        "containment": 0.3855
+      },
+      {
+        "task_id": "PRJ_004",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 138,
+        "hit_shingles": 53,
+        "containment": 0.3841
+      },
+      {
+        "task_id": "FAPI_028",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 113,
+        "hit_shingles": 42,
+        "containment": 0.3717
+      },
+      {
+        "task_id": "MIX_102",
+        "task_family": "mixin-signature",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 152,
+        "hit_shingles": 56,
+        "containment": 0.3684
+      },
+      {
+        "task_id": "FORGE_API_020",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 343,
+        "hit_shingles": 126,
+        "containment": 0.3673
+      },
+      {
+        "task_id": "FAPI_011",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 123,
+        "hit_shingles": 45,
+        "containment": 0.3659
+      },
+      {
+        "task_id": "MIG_006",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 197,
+        "hit_shingles": 72,
+        "containment": 0.3655
+      },
+      {
+        "task_id": "FAPI_018",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 129,
+        "hit_shingles": 47,
+        "containment": 0.3643
+      },
+      {
+        "task_id": "API_004",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 163,
+        "hit_shingles": 57,
+        "containment": 0.3497
+      },
+      {
+        "task_id": "FORGE_API_019",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 367,
+        "hit_shingles": 128,
+        "containment": 0.3488
+      },
+      {
+        "task_id": "MIXIN_006",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 158,
+        "hit_shingles": 55,
+        "containment": 0.3481
+      },
+      {
+        "task_id": "MIXIN_012",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 141,
+        "hit_shingles": 49,
+        "containment": 0.3475
+      },
+      {
+        "task_id": "FORGE_API_002",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 182,
+        "hit_shingles": 63,
+        "containment": 0.3462
+      },
+      {
+        "task_id": "MIG_018",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 81,
+        "hit_shingles": 28,
+        "containment": 0.3457
+      },
+      {
+        "task_id": "FORGE_API_010",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 324,
+        "hit_shingles": 112,
+        "containment": 0.3457
+      },
+      {
+        "task_id": "FAPI_007",
+        "task_family": "fapi-client",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 136,
+        "hit_shingles": 47,
+        "containment": 0.3456
+      },
+      {
+        "task_id": "API_001",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 125,
+        "hit_shingles": 43,
+        "containment": 0.344
+      },
+      {
+        "task_id": "MIG_013",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 181,
+        "hit_shingles": 62,
+        "containment": 0.3425
+      },
+      {
+        "task_id": "MIX_103",
+        "task_family": "mixin-accessor",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 76,
+        "hit_shingles": 26,
+        "containment": 0.3421
+      },
+      {
+        "task_id": "FAPI_012",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 112,
+        "hit_shingles": 38,
+        "containment": 0.3393
+      },
+      {
+        "task_id": "API_003",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 121,
+        "hit_shingles": 41,
+        "containment": 0.3388
+      },
+      {
+        "task_id": "BUILD_013",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 74,
+        "hit_shingles": 25,
+        "containment": 0.3378
+      },
+      {
+        "task_id": "FORGE_API_001",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 232,
+        "hit_shingles": 77,
+        "containment": 0.3319
+      },
+      {
+        "task_id": "MIG_002",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 103,
+        "hit_shingles": 34,
+        "containment": 0.3301
+      },
+      {
+        "task_id": "MIX_109",
+        "task_family": "mixin-accessor",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 67,
+        "hit_shingles": 22,
+        "containment": 0.3284
+      },
+      {
+        "task_id": "FAPI_008",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 123,
+        "hit_shingles": 40,
+        "containment": 0.3252
+      },
+      {
+        "task_id": "GPL_001",
+        "task_family": "gameplay-recipe",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 205,
+        "hit_shingles": 66,
+        "containment": 0.322
+      },
+      {
+        "task_id": "GUI_029",
+        "task_family": "gui-keys",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 174,
+        "hit_shingles": 56,
+        "containment": 0.3218
+      },
+      {
+        "task_id": "MIXIN_005",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 66,
+        "hit_shingles": 21,
+        "containment": 0.3182
+      },
+      {
+        "task_id": "FORGE_API_012",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 268,
+        "hit_shingles": 85,
+        "containment": 0.3172
+      },
+      {
+        "task_id": "MIG_003",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 114,
+        "hit_shingles": 36,
+        "containment": 0.3158
+      },
+      {
+        "task_id": "FORGE_API_008",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 394,
+        "hit_shingles": 124,
+        "containment": 0.3147
+      },
+      {
+        "task_id": "MIXIN_018",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 185,
+        "hit_shingles": 58,
+        "containment": 0.3135
+      },
+      {
+        "task_id": "FORGE_API_006",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 185,
+        "hit_shingles": 58,
+        "containment": 0.3135
+      },
+      {
+        "task_id": "MIXIN_019",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 147,
+        "hit_shingles": 46,
+        "containment": 0.3129
+      },
+      {
+        "task_id": "MIXIN_004",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 97,
+        "hit_shingles": 30,
+        "containment": 0.3093
+      },
+      {
+        "task_id": "GUI_034",
+        "task_family": "gui-lifecycle",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 211,
+        "hit_shingles": 65,
+        "containment": 0.3081
+      },
+      {
+        "task_id": "PRJ_001",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 125,
+        "hit_shingles": 38,
+        "containment": 0.304
+      },
+      {
+        "task_id": "MIG_008",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 89,
+        "hit_shingles": 27,
+        "containment": 0.3034
+      },
+      {
+        "task_id": "FAPI_031",
+        "task_family": "fapi-worldgen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 76,
+        "hit_shingles": 23,
+        "containment": 0.3026
+      },
+      {
+        "task_id": "API_012",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 136,
+        "hit_shingles": 41,
+        "containment": 0.3015
+      },
+      {
+        "task_id": "API_011",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 146,
+        "hit_shingles": 44,
+        "containment": 0.3014
+      },
+      {
+        "task_id": "MIG_005",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 113,
+        "hit_shingles": 34,
+        "containment": 0.3009
+      },
+      {
+        "task_id": "FAPI_006",
+        "task_family": "fapi-commands",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 134,
+        "hit_shingles": 40,
+        "containment": 0.2985
+      },
+      {
+        "task_id": "FORGE_API_017",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 237,
+        "hit_shingles": 70,
+        "containment": 0.2954
+      },
+      {
+        "task_id": "FORGE_API_003",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 234,
+        "hit_shingles": 69,
+        "containment": 0.2949
+      },
+      {
+        "task_id": "MIG_009",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 102,
+        "hit_shingles": 30,
+        "containment": 0.2941
+      },
+      {
+        "task_id": "API_006",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 140,
+        "hit_shingles": 41,
+        "containment": 0.2929
+      },
+      {
+        "task_id": "API_017",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 168,
+        "hit_shingles": 49,
+        "containment": 0.2917
+      },
+      {
+        "task_id": "API_019",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 197,
+        "hit_shingles": 57,
+        "containment": 0.2893
+      },
+      {
+        "task_id": "MIXIN_016",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 174,
+        "hit_shingles": 50,
+        "containment": 0.2874
+      },
+      {
+        "task_id": "MIG_007",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 214,
+        "hit_shingles": 61,
+        "containment": 0.285
+      },
+      {
+        "task_id": "MIX_104",
+        "task_family": "mixin-require",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 137,
+        "hit_shingles": 39,
+        "containment": 0.2847
+      },
+      {
+        "task_id": "FAPI_023",
+        "task_family": "fapi-blockentity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 148,
+        "hit_shingles": 42,
+        "containment": 0.2838
+      },
+      {
+        "task_id": "API_010",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 215,
+        "hit_shingles": 61,
+        "containment": 0.2837
+      },
+      {
+        "task_id": "GUI_014",
+        "task_family": "gui-be-state",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 223,
+        "hit_shingles": 63,
+        "containment": 0.2825
+      },
+      {
+        "task_id": "API_014",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 135,
+        "hit_shingles": 38,
+        "containment": 0.2815
+      },
+      {
+        "task_id": "FORGE_API_004",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 129,
+        "hit_shingles": 36,
+        "containment": 0.2791
+      },
+      {
+        "task_id": "RES_016",
+        "task_family": "res-sounds",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 86,
+        "hit_shingles": 24,
+        "containment": 0.2791
+      },
+      {
+        "task_id": "MIG_017",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 97,
+        "hit_shingles": 27,
+        "containment": 0.2784
+      },
+      {
+        "task_id": "FORGE_API_013",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 178,
+        "hit_shingles": 48,
+        "containment": 0.2697
+      },
+      {
+        "task_id": "FORGE_API_007",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 282,
+        "hit_shingles": 76,
+        "containment": 0.2695
+      },
+      {
+        "task_id": "MIX_111",
+        "task_family": "mixin-shadow",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 90,
+        "hit_shingles": 24,
+        "containment": 0.2667
+      },
+      {
+        "task_id": "MIXIN_015",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 144,
+        "hit_shingles": 38,
+        "containment": 0.2639
+      },
+      {
+        "task_id": "NET_018",
+        "task_family": "net-security",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 129,
+        "hit_shingles": 34,
+        "containment": 0.2636
+      },
+      {
+        "task_id": "MIX_112",
+        "task_family": "mixin-client",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 110,
+        "hit_shingles": 29,
+        "containment": 0.2636
+      },
+      {
+        "task_id": "MIX_105",
+        "task_family": "mixin-client",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 146,
+        "hit_shingles": 38,
+        "containment": 0.2603
+      },
+      {
+        "task_id": "GPL_010",
+        "task_family": "gameplay-interact",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 124,
+        "hit_shingles": 32,
+        "containment": 0.2581
+      },
+      {
+        "task_id": "RND_041",
+        "task_family": "render-budget",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 303,
+        "hit_shingles": 78,
+        "containment": 0.2574
+      },
+      {
+        "task_id": "FORGE_API_005",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 164,
+        "hit_shingles": 42,
+        "containment": 0.2561
+      },
+      {
+        "task_id": "MIX_108",
+        "task_family": "mixin-priority",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 127,
+        "hit_shingles": 32,
+        "containment": 0.252
+      },
+      {
+        "task_id": "MIX_107",
+        "task_family": "mixin-redirect",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 195,
+        "hit_shingles": 49,
+        "containment": 0.2513
+      },
+      {
+        "task_id": "FAPI_029",
+        "task_family": "fapi-advancement",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 104,
+        "hit_shingles": 26,
+        "containment": 0.25
+      },
+      {
+        "task_id": "MIXIN_007",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 102,
+        "hit_shingles": 25,
+        "containment": 0.2451
+      },
+      {
+        "task_id": "FAPI_026",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 99,
+        "hit_shingles": 24,
+        "containment": 0.2424
+      },
+      {
+        "task_id": "MIG_015",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 120,
+        "hit_shingles": 29,
+        "containment": 0.2417
+      },
+      {
+        "task_id": "MIXIN_008",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 83,
+        "hit_shingles": 20,
+        "containment": 0.241
+      },
+      {
+        "task_id": "RND_015",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 274,
+        "hit_shingles": 66,
+        "containment": 0.2409
+      },
+      {
+        "task_id": "RND_011",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 362,
+        "hit_shingles": 87,
+        "containment": 0.2403
+      },
+      {
+        "task_id": "API_007",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 360,
+        "hit_shingles": 86,
+        "containment": 0.2389
+      },
+      {
+        "task_id": "GUI_021",
+        "task_family": "gui-textures",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 232,
+        "hit_shingles": 55,
+        "containment": 0.2371
+      },
+      {
+        "task_id": "MIX_115",
+        "task_family": "mixin-client",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 161,
+        "hit_shingles": 38,
+        "containment": 0.236
+      },
+      {
+        "task_id": "RES_011",
+        "task_family": "res-particles",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 106,
+        "hit_shingles": 25,
+        "containment": 0.2358
+      },
+      {
+        "task_id": "FORGE_API_009",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 238,
+        "hit_shingles": 56,
+        "containment": 0.2353
+      },
+      {
+        "task_id": "RND_001",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 280,
+        "hit_shingles": 65,
+        "containment": 0.2321
+      },
+      {
+        "task_id": "RND_044",
+        "task_family": "render-transparency",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 255,
+        "hit_shingles": 59,
+        "containment": 0.2314
+      },
+      {
+        "task_id": "RES_021",
+        "task_family": "res-reload",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 148,
+        "hit_shingles": 34,
+        "containment": 0.2297
+      },
+      {
+        "task_id": "FAPI_002",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 93,
+        "hit_shingles": 21,
+        "containment": 0.2258
+      },
+      {
+        "task_id": "MIX_113",
+        "task_family": "mixin-priority",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 124,
+        "hit_shingles": 28,
+        "containment": 0.2258
+      },
+      {
+        "task_id": "RND_007",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 302,
+        "hit_shingles": 68,
+        "containment": 0.2252
+      },
+      {
+        "task_id": "RND_035",
+        "task_family": "render-resources",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 254,
+        "hit_shingles": 57,
+        "containment": 0.2244
+      },
+      {
+        "task_id": "RND_028",
+        "task_family": "render-perf",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 252,
+        "hit_shingles": 56,
+        "containment": 0.2222
+      },
+      {
+        "task_id": "FAPI_013",
+        "task_family": "fapi-loot",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 141,
+        "hit_shingles": 31,
+        "containment": 0.2199
+      },
+      {
+        "task_id": "NET_007",
+        "task_family": "net-payload",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 137,
+        "hit_shingles": 30,
+        "containment": 0.219
+      },
+      {
+        "task_id": "RND_005",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 299,
+        "hit_shingles": 65,
+        "containment": 0.2174
+      },
+      {
+        "task_id": "GPL_009",
+        "task_family": "gameplay-interact",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 97,
+        "hit_shingles": 21,
+        "containment": 0.2165
+      },
+      {
+        "task_id": "FAPI_014",
+        "task_family": "fapi-loot",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 134,
+        "hit_shingles": 29,
+        "containment": 0.2164
+      },
+      {
+        "task_id": "RND_026",
+        "task_family": "render-perf",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 281,
+        "hit_shingles": 60,
+        "containment": 0.2135
+      },
+      {
+        "task_id": "GUI_001",
+        "task_family": "gui-simple-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 197,
+        "hit_shingles": 42,
+        "containment": 0.2132
+      },
+      {
+        "task_id": "MIG_001",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 94,
+        "hit_shingles": 20,
+        "containment": 0.2128
+      },
+      {
+        "task_id": "GUI_019",
+        "task_family": "gui-standalone-network",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 174,
+        "hit_shingles": 37,
+        "containment": 0.2126
+      },
+      {
+        "task_id": "NET_004",
+        "task_family": "net-security",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 175,
+        "hit_shingles": 37,
+        "containment": 0.2114
+      },
+      {
+        "task_id": "RND_017",
+        "task_family": "render-transparency",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 247,
+        "hit_shingles": 52,
+        "containment": 0.2105
+      },
+      {
+        "task_id": "GUI_016",
+        "task_family": "gui-be-state",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 206,
+        "hit_shingles": 43,
+        "containment": 0.2087
+      },
+      {
+        "task_id": "RND_030",
+        "task_family": "render-posestack",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 269,
+        "hit_shingles": 56,
+        "containment": 0.2082
+      },
+      {
+        "task_id": "RND_010",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 399,
+        "hit_shingles": 83,
+        "containment": 0.208
+      },
+      {
+        "task_id": "RND_020",
+        "task_family": "render-transparency",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 226,
+        "hit_shingles": 47,
+        "containment": 0.208
+      },
+      {
+        "task_id": "FAPI_009",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 135,
+        "hit_shingles": 28,
+        "containment": 0.2074
+      },
+      {
+        "task_id": "BUILD_001",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 116,
+        "hit_shingles": 24,
+        "containment": 0.2069
+      },
+      {
+        "task_id": "RND_002",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 210,
+        "hit_shingles": 43,
+        "containment": 0.2048
+      },
+      {
+        "task_id": "RND_047",
+        "task_family": "render-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 217,
+        "hit_shingles": 44,
+        "containment": 0.2028
+      },
+      {
+        "task_id": "MIG_016",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 79,
+        "hit_shingles": 16,
+        "containment": 0.2025
+      },
+      {
+        "task_id": "PRJ_009",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 114,
+        "hit_shingles": 23,
+        "containment": 0.2018
+      },
+      {
+        "task_id": "RND_009",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 253,
+        "hit_shingles": 51,
+        "containment": 0.2016
+      },
+      {
+        "task_id": "RND_050",
+        "task_family": "render-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 243,
+        "hit_shingles": 49,
+        "containment": 0.2016
+      },
+      {
+        "task_id": "GUI_017",
+        "task_family": "gui-server-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 170,
+        "hit_shingles": 34,
+        "containment": 0.2
+      },
+      {
+        "task_id": "RND_053",
+        "task_family": "render-perf",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 205,
+        "hit_shingles": 41,
+        "containment": 0.2
+      },
+      {
+        "task_id": "FAPI_005",
+        "task_family": "fapi-capability",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 96,
+        "hit_shingles": 19,
+        "containment": 0.1979
+      },
+      {
+        "task_id": "MIX_114",
+        "task_family": "mixin-require",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 117,
+        "hit_shingles": 23,
+        "containment": 0.1966
+      },
+      {
+        "task_id": "GUI_030",
+        "task_family": "gui-keys",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 270,
+        "hit_shingles": 53,
+        "containment": 0.1963
+      },
+      {
+        "task_id": "PRJ_003",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 102,
+        "hit_shingles": 20,
+        "containment": 0.1961
+      },
+      {
+        "task_id": "GUI_011",
+        "task_family": "gui-menu-sync",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 222,
+        "hit_shingles": 43,
+        "containment": 0.1937
+      },
+      {
+        "task_id": "RND_024",
+        "task_family": "render-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 264,
+        "hit_shingles": 51,
+        "containment": 0.1932
+      },
+      {
+        "task_id": "GUI_036",
+        "task_family": "gui-scale",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 233,
+        "hit_shingles": 45,
+        "containment": 0.1931
+      },
+      {
+        "task_id": "RND_022",
+        "task_family": "render-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 255,
+        "hit_shingles": 49,
+        "containment": 0.1922
+      },
+      {
+        "task_id": "GUI_022",
+        "task_family": "gui-textures",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 217,
+        "hit_shingles": 41,
+        "containment": 0.1889
+      },
+      {
+        "task_id": "RND_012",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 361,
+        "hit_shingles": 68,
+        "containment": 0.1884
+      },
+      {
+        "task_id": "MIXIN_020",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 213,
+        "hit_shingles": 40,
+        "containment": 0.1878
+      },
+      {
+        "task_id": "BUILD_002",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 123,
+        "hit_shingles": 23,
+        "containment": 0.187
+      },
+      {
+        "task_id": "GUI_040",
+        "task_family": "gui-stale-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 199,
+        "hit_shingles": 37,
+        "containment": 0.1859
+      },
+      {
+        "task_id": "GUI_008",
+        "task_family": "gui-list-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 259,
+        "hit_shingles": 48,
+        "containment": 0.1853
+      },
+      {
+        "task_id": "RES_026",
+        "task_family": "res-datagen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 109,
+        "hit_shingles": 20,
+        "containment": 0.1835
+      },
+      {
+        "task_id": "GUI_039",
+        "task_family": "gui-stale-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 213,
+        "hit_shingles": 39,
+        "containment": 0.1831
+      },
+      {
+        "task_id": "BUILD_006",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 55,
+        "hit_shingles": 10,
+        "containment": 0.1818
+      },
+      {
+        "task_id": "GUI_003",
+        "task_family": "gui-simple-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 226,
+        "hit_shingles": 41,
+        "containment": 0.1814
+      },
+      {
+        "task_id": "FAPI_021",
+        "task_family": "fapi-network",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 166,
+        "hit_shingles": 30,
+        "containment": 0.1807
+      },
+      {
+        "task_id": "PRJ_007",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 144,
+        "hit_shingles": 26,
+        "containment": 0.1806
+      },
+      {
+        "task_id": "RND_006",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 244,
+        "hit_shingles": 44,
+        "containment": 0.1803
+      },
+      {
+        "task_id": "GUI_037",
+        "task_family": "gui-guard",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 201,
+        "hit_shingles": 36,
+        "containment": 0.1791
+      },
+      {
+        "task_id": "NET_001",
+        "task_family": "net-payload",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 201,
+        "hit_shingles": 36,
+        "containment": 0.1791
+      },
+      {
+        "task_id": "RND_003",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 257,
+        "hit_shingles": 46,
+        "containment": 0.179
+      },
+      {
+        "task_id": "GUI_013",
+        "task_family": "gui-menu-sync",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 241,
+        "hit_shingles": 43,
+        "containment": 0.1784
+      },
+      {
+        "task_id": "MIG_011",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 101,
+        "hit_shingles": 18,
+        "containment": 0.1782
+      },
+      {
+        "task_id": "RND_013",
+        "task_family": "render-item",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 174,
+        "hit_shingles": 31,
+        "containment": 0.1782
+      },
+      {
+        "task_id": "RND_004",
+        "task_family": "render-ber",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 248,
+        "hit_shingles": 43,
+        "containment": 0.1734
+      },
+      {
+        "task_id": "GUI_020",
+        "task_family": "gui-standalone-network",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 225,
+        "hit_shingles": 39,
+        "containment": 0.1733
+      },
+      {
+        "task_id": "MIG_020",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 156,
+        "hit_shingles": 27,
+        "containment": 0.1731
+      },
+      {
+        "task_id": "RND_008",
+        "task_family": "render-entity",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 335,
+        "hit_shingles": 57,
+        "containment": 0.1701
+      },
+      {
+        "task_id": "GUI_033",
+        "task_family": "gui-lifecycle",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 197,
+        "hit_shingles": 33,
+        "containment": 0.1675
+      },
+      {
+        "task_id": "NET_002",
+        "task_family": "net-security",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 210,
+        "hit_shingles": 35,
+        "containment": 0.1667
+      },
+      {
+        "task_id": "GUI_002",
+        "task_family": "gui-simple-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 212,
+        "hit_shingles": 35,
+        "containment": 0.1651
+      },
+      {
+        "task_id": "FAPI_019",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 147,
+        "hit_shingles": 24,
+        "containment": 0.1633
+      },
+      {
+        "task_id": "GUI_009",
+        "task_family": "gui-list-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 211,
+        "hit_shingles": 34,
+        "containment": 0.1611
+      },
+      {
+        "task_id": "MIG_019",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 106,
+        "hit_shingles": 17,
+        "containment": 0.1604
+      },
+      {
+        "task_id": "FAPI_010",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 113,
+        "hit_shingles": 18,
+        "containment": 0.1593
+      },
+      {
+        "task_id": "GUI_031",
+        "task_family": "gui-l10n",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 189,
+        "hit_shingles": 30,
+        "containment": 0.1587
+      },
+      {
+        "task_id": "FAPI_020",
+        "task_family": "fapi-registry",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 261,
+        "hit_shingles": 41,
+        "containment": 0.1571
+      },
+      {
+        "task_id": "FAPI_017",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 103,
+        "hit_shingles": 16,
+        "containment": 0.1553
+      },
+      {
+        "task_id": "GUI_035",
+        "task_family": "gui-scale",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 226,
+        "hit_shingles": 35,
+        "containment": 0.1549
+      },
+      {
+        "task_id": "GUI_024",
+        "task_family": "gui-adaptive",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 281,
+        "hit_shingles": 43,
+        "containment": 0.153
+      },
+      {
+        "task_id": "GUI_007",
+        "task_family": "gui-list-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 295,
+        "hit_shingles": 45,
+        "containment": 0.1525
+      },
+      {
+        "task_id": "RND_033",
+        "task_family": "render-light",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 259,
+        "hit_shingles": 39,
+        "containment": 0.1506
+      },
+      {
+        "task_id": "BUILD_007",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 80,
+        "hit_shingles": 12,
+        "containment": 0.15
+      },
+      {
+        "task_id": "MIG_012",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 82,
+        "hit_shingles": 12,
+        "containment": 0.1463
+      },
+      {
+        "task_id": "GUI_005",
+        "task_family": "gui-config-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 221,
+        "hit_shingles": 32,
+        "containment": 0.1448
+      },
+      {
+        "task_id": "GPL_004",
+        "task_family": "gameplay-savedata",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 159,
+        "hit_shingles": 23,
+        "containment": 0.1447
+      },
+      {
+        "task_id": "GUI_032",
+        "task_family": "gui-l10n",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 216,
+        "hit_shingles": 31,
+        "containment": 0.1435
+      },
+      {
+        "task_id": "GUI_027",
+        "task_family": "gui-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 176,
+        "hit_shingles": 25,
+        "containment": 0.142
+      },
+      {
+        "task_id": "GPL_002",
+        "task_family": "gameplay-recipe",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 127,
+        "hit_shingles": 18,
+        "containment": 0.1417
+      },
+      {
+        "task_id": "PRJ_008",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 92,
+        "hit_shingles": 13,
+        "containment": 0.1413
+      },
+      {
+        "task_id": "BUILD_014",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 57,
+        "hit_shingles": 8,
+        "containment": 0.1404
+      },
+      {
+        "task_id": "API_020",
+        "task_family": "api-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 129,
+        "hit_shingles": 18,
+        "containment": 0.1395
+      },
+      {
+        "task_id": "GUI_038",
+        "task_family": "gui-stale-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 194,
+        "hit_shingles": 27,
+        "containment": 0.1392
+      },
+      {
+        "task_id": "PRJ_006",
+        "task_family": "proj-migration",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 94,
+        "hit_shingles": 13,
+        "containment": 0.1383
+      },
+      {
+        "task_id": "GUI_028",
+        "task_family": "gui-anim",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 184,
+        "hit_shingles": 25,
+        "containment": 0.1359
+      },
+      {
+        "task_id": "RES_012",
+        "task_family": "res-particles",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 170,
+        "hit_shingles": 23,
+        "containment": 0.1353
+      },
+      {
+        "task_id": "FAPI_025",
+        "task_family": "fapi-recipe",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 52,
+        "hit_shingles": 7,
+        "containment": 0.1346
+      },
+      {
+        "task_id": "GUI_025",
+        "task_family": "gui-paged",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 250,
+        "hit_shingles": 33,
+        "containment": 0.132
+      },
+      {
+        "task_id": "NET_026",
+        "task_family": "net-security",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 77,
+        "hit_shingles": 10,
+        "containment": 0.1299
+      },
+      {
+        "task_id": "FAPI_024",
+        "task_family": "fapi-misc",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 85,
+        "hit_shingles": 11,
+        "containment": 0.1294
+      },
+      {
+        "task_id": "MIG_010",
+        "task_family": "migration-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 93,
+        "hit_shingles": 12,
+        "containment": 0.129
+      },
+      {
+        "task_id": "GUI_006",
+        "task_family": "gui-config-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 217,
+        "hit_shingles": 28,
+        "containment": 0.129
+      },
+      {
+        "task_id": "GUI_041",
+        "task_family": "gui-stale-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 202,
+        "hit_shingles": 26,
+        "containment": 0.1287
+      },
+      {
+        "task_id": "FAPI_027",
+        "task_family": "fapi-events",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 128,
+        "hit_shingles": 16,
+        "containment": 0.125
+      },
+      {
+        "task_id": "MIXIN_014",
+        "task_family": "mixin-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 128,
+        "hit_shingles": 15,
+        "containment": 0.1172
+      },
+      {
+        "task_id": "RES_004",
+        "task_family": "res-datagen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 197,
+        "hit_shingles": 23,
+        "containment": 0.1168
+      },
+      {
+        "task_id": "GUI_023",
+        "task_family": "gui-adaptive",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 224,
+        "hit_shingles": 26,
+        "containment": 0.1161
+      },
+      {
+        "task_id": "GUI_018",
+        "task_family": "gui-server-data",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 230,
+        "hit_shingles": 26,
+        "containment": 0.113
+      },
+      {
+        "task_id": "GUI_026",
+        "task_family": "gui-paged",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 294,
+        "hit_shingles": 33,
+        "containment": 0.1122
+      },
+      {
+        "task_id": "BUILD_009",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 65,
+        "hit_shingles": 7,
+        "containment": 0.1077
+      },
+      {
+        "task_id": "GUI_004",
+        "task_family": "gui-config-screen",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 218,
+        "hit_shingles": 23,
+        "containment": 0.1055
+      },
+      {
+        "task_id": "BUILD_019",
+        "task_family": "build-v2",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 114,
+        "hit_shingles": 12,
+        "containment": 0.1053
+      },
+      {
+        "task_id": "RES_013",
+        "task_family": "res-particles",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 144,
+        "hit_shingles": 15,
+        "containment": 0.1042
+      },
+      {
+        "task_id": "NET_005",
+        "task_family": "net-security",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 87,
+        "hit_shingles": 9,
+        "containment": 0.1034
+      },
+      {
+        "task_id": "GPL_024",
+        "task_family": "gameplay-interact",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 98,
+        "hit_shingles": 10,
+        "containment": 0.102
+      },
+      {
+        "task_id": "GPL_015",
+        "task_family": "gameplay-interact",
+        "corpus": "sft-v2.1.0-rc2/train",
+        "task_shingles": 90,
+        "hit_shingles": 9,
+        "containment": 0.1
+      }
+    ]
+  },
+  "cpt": {
+    "shards": 32,
+    "records": 12620,
+    "corpus_shingles": 139556811,
+    "max_containment": {
+      "task_id": "API_002",
+      "task_family": "api-v2",
+      "corpus": "cpt-v9-full",
+      "task_shingles": 163,
+      "hit_shingles": 83,
+      "containment": 0.5092
+    },
+    "tasks_ge_0.10": [
+      {
+        "task_id": "API_002",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 163,
+        "hit_shingles": 83,
+        "containment": 0.5092
+      },
+      {
+        "task_id": "GUI_010",
+        "task_family": "gui-menu-sync",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 319,
+        "hit_shingles": 152,
+        "containment": 0.4765
+      },
+      {
+        "task_id": "MIXIN_010",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 129,
+        "hit_shingles": 61,
+        "containment": 0.4729
+      },
+      {
+        "task_id": "GUI_012",
+        "task_family": "gui-menu-sync",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 294,
+        "hit_shingles": 137,
+        "containment": 0.466
+      },
+      {
+        "task_id": "MIXIN_002",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 142,
+        "hit_shingles": 66,
+        "containment": 0.4648
+      },
+      {
+        "task_id": "MIX_101",
+        "task_family": "mixin-inject",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 127,
+        "hit_shingles": 58,
+        "containment": 0.4567
+      },
+      {
+        "task_id": "MIXIN_017",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 189,
+        "hit_shingles": 85,
+        "containment": 0.4497
+      },
+      {
+        "task_id": "MIXIN_009",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 173,
+        "hit_shingles": 77,
+        "containment": 0.4451
+      },
+      {
+        "task_id": "MIXIN_011",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 177,
+        "hit_shingles": 77,
+        "containment": 0.435
+      },
+      {
+        "task_id": "FAPI_004",
+        "task_family": "fapi-item",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 159,
+        "hit_shingles": 69,
+        "containment": 0.434
+      },
+      {
+        "task_id": "FORGE_API_014",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 221,
+        "hit_shingles": 95,
+        "containment": 0.4299
+      },
+      {
+        "task_id": "API_013",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 147,
+        "hit_shingles": 63,
+        "containment": 0.4286
+      },
+      {
+        "task_id": "FORGE_API_018",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 383,
+        "hit_shingles": 163,
+        "containment": 0.4256
+      },
+      {
+        "task_id": "API_008",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 211,
+        "hit_shingles": 89,
+        "containment": 0.4218
+      },
+      {
+        "task_id": "MIXIN_001",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 98,
+        "hit_shingles": 41,
+        "containment": 0.4184
+      },
+      {
+        "task_id": "FAPI_016",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 107,
+        "hit_shingles": 43,
+        "containment": 0.4019
+      },
+      {
+        "task_id": "FORGE_API_016",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 219,
+        "hit_shingles": 88,
+        "containment": 0.4018
+      },
+      {
+        "task_id": "FORGE_API_015",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 172,
+        "hit_shingles": 69,
+        "containment": 0.4012
+      },
+      {
+        "task_id": "API_005",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 139,
+        "hit_shingles": 55,
+        "containment": 0.3957
+      },
+      {
+        "task_id": "MIXIN_003",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 139,
+        "hit_shingles": 55,
+        "containment": 0.3957
+      },
+      {
+        "task_id": "API_009",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 181,
+        "hit_shingles": 71,
+        "containment": 0.3923
+      },
+      {
+        "task_id": "FAPI_034",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 92,
+        "hit_shingles": 36,
+        "containment": 0.3913
+      },
+      {
+        "task_id": "MIX_110",
+        "task_family": "mixin-signature",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 169,
+        "hit_shingles": 66,
+        "containment": 0.3905
+      },
+      {
+        "task_id": "API_016",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 131,
+        "hit_shingles": 51,
+        "containment": 0.3893
+      },
+      {
+        "task_id": "FAPI_001",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 103,
+        "hit_shingles": 40,
+        "containment": 0.3883
+      },
+      {
+        "task_id": "FORGE_API_011",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 686,
+        "hit_shingles": 266,
+        "containment": 0.3878
+      },
+      {
+        "task_id": "FAPI_015",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 124,
+        "hit_shingles": 48,
+        "containment": 0.3871
+      },
+      {
+        "task_id": "API_018",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 207,
+        "hit_shingles": 80,
+        "containment": 0.3865
+      },
+      {
+        "task_id": "MIG_004",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 166,
+        "hit_shingles": 64,
+        "containment": 0.3855
+      },
+      {
+        "task_id": "PRJ_004",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 138,
+        "hit_shingles": 53,
+        "containment": 0.3841
+      },
+      {
+        "task_id": "FAPI_028",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 113,
+        "hit_shingles": 42,
+        "containment": 0.3717
+      },
+      {
+        "task_id": "MIX_102",
+        "task_family": "mixin-signature",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 152,
+        "hit_shingles": 56,
+        "containment": 0.3684
+      },
+      {
+        "task_id": "FORGE_API_020",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 343,
+        "hit_shingles": 126,
+        "containment": 0.3673
+      },
+      {
+        "task_id": "FAPI_011",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 123,
+        "hit_shingles": 45,
+        "containment": 0.3659
+      },
+      {
+        "task_id": "MIG_006",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 197,
+        "hit_shingles": 72,
+        "containment": 0.3655
+      },
+      {
+        "task_id": "FAPI_018",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 129,
+        "hit_shingles": 47,
+        "containment": 0.3643
+      },
+      {
+        "task_id": "API_004",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 163,
+        "hit_shingles": 57,
+        "containment": 0.3497
+      },
+      {
+        "task_id": "FORGE_API_019",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 367,
+        "hit_shingles": 128,
+        "containment": 0.3488
+      },
+      {
+        "task_id": "MIXIN_006",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 158,
+        "hit_shingles": 55,
+        "containment": 0.3481
+      },
+      {
+        "task_id": "MIXIN_012",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 141,
+        "hit_shingles": 49,
+        "containment": 0.3475
+      },
+      {
+        "task_id": "FORGE_API_002",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 182,
+        "hit_shingles": 63,
+        "containment": 0.3462
+      },
+      {
+        "task_id": "MIG_018",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 81,
+        "hit_shingles": 28,
+        "containment": 0.3457
+      },
+      {
+        "task_id": "FORGE_API_010",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 324,
+        "hit_shingles": 112,
+        "containment": 0.3457
+      },
+      {
+        "task_id": "FAPI_007",
+        "task_family": "fapi-client",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 136,
+        "hit_shingles": 47,
+        "containment": 0.3456
+      },
+      {
+        "task_id": "API_001",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 125,
+        "hit_shingles": 43,
+        "containment": 0.344
+      },
+      {
+        "task_id": "MIG_013",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 181,
+        "hit_shingles": 62,
+        "containment": 0.3425
+      },
+      {
+        "task_id": "MIX_103",
+        "task_family": "mixin-accessor",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 76,
+        "hit_shingles": 26,
+        "containment": 0.3421
+      },
+      {
+        "task_id": "FAPI_012",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 112,
+        "hit_shingles": 38,
+        "containment": 0.3393
+      },
+      {
+        "task_id": "API_003",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 121,
+        "hit_shingles": 41,
+        "containment": 0.3388
+      },
+      {
+        "task_id": "BUILD_013",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 74,
+        "hit_shingles": 25,
+        "containment": 0.3378
+      },
+      {
+        "task_id": "FORGE_API_001",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 232,
+        "hit_shingles": 77,
+        "containment": 0.3319
+      },
+      {
+        "task_id": "MIG_002",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 103,
+        "hit_shingles": 34,
+        "containment": 0.3301
+      },
+      {
+        "task_id": "MIX_109",
+        "task_family": "mixin-accessor",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 67,
+        "hit_shingles": 22,
+        "containment": 0.3284
+      },
+      {
+        "task_id": "FAPI_008",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 123,
+        "hit_shingles": 40,
+        "containment": 0.3252
+      },
+      {
+        "task_id": "GPL_001",
+        "task_family": "gameplay-recipe",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 205,
+        "hit_shingles": 66,
+        "containment": 0.322
+      },
+      {
+        "task_id": "GUI_029",
+        "task_family": "gui-keys",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 174,
+        "hit_shingles": 56,
+        "containment": 0.3218
+      },
+      {
+        "task_id": "MIXIN_005",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 66,
+        "hit_shingles": 21,
+        "containment": 0.3182
+      },
+      {
+        "task_id": "FORGE_API_012",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 268,
+        "hit_shingles": 85,
+        "containment": 0.3172
+      },
+      {
+        "task_id": "MIG_003",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 114,
+        "hit_shingles": 36,
+        "containment": 0.3158
+      },
+      {
+        "task_id": "FORGE_API_008",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 394,
+        "hit_shingles": 124,
+        "containment": 0.3147
+      },
+      {
+        "task_id": "MIXIN_018",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 185,
+        "hit_shingles": 58,
+        "containment": 0.3135
+      },
+      {
+        "task_id": "FORGE_API_006",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 185,
+        "hit_shingles": 58,
+        "containment": 0.3135
+      },
+      {
+        "task_id": "MIXIN_019",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 147,
+        "hit_shingles": 46,
+        "containment": 0.3129
+      },
+      {
+        "task_id": "MIXIN_004",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 97,
+        "hit_shingles": 30,
+        "containment": 0.3093
+      },
+      {
+        "task_id": "GUI_034",
+        "task_family": "gui-lifecycle",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 211,
+        "hit_shingles": 65,
+        "containment": 0.3081
+      },
+      {
+        "task_id": "PRJ_001",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 125,
+        "hit_shingles": 38,
+        "containment": 0.304
+      },
+      {
+        "task_id": "MIG_008",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 89,
+        "hit_shingles": 27,
+        "containment": 0.3034
+      },
+      {
+        "task_id": "FAPI_031",
+        "task_family": "fapi-worldgen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 76,
+        "hit_shingles": 23,
+        "containment": 0.3026
+      },
+      {
+        "task_id": "API_012",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 136,
+        "hit_shingles": 41,
+        "containment": 0.3015
+      },
+      {
+        "task_id": "API_011",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 146,
+        "hit_shingles": 44,
+        "containment": 0.3014
+      },
+      {
+        "task_id": "MIG_005",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 113,
+        "hit_shingles": 34,
+        "containment": 0.3009
+      },
+      {
+        "task_id": "FAPI_006",
+        "task_family": "fapi-commands",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 134,
+        "hit_shingles": 40,
+        "containment": 0.2985
+      },
+      {
+        "task_id": "FORGE_API_017",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 237,
+        "hit_shingles": 70,
+        "containment": 0.2954
+      },
+      {
+        "task_id": "FORGE_API_003",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 234,
+        "hit_shingles": 69,
+        "containment": 0.2949
+      },
+      {
+        "task_id": "MIG_009",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 102,
+        "hit_shingles": 30,
+        "containment": 0.2941
+      },
+      {
+        "task_id": "API_006",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 140,
+        "hit_shingles": 41,
+        "containment": 0.2929
+      },
+      {
+        "task_id": "API_017",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 168,
+        "hit_shingles": 49,
+        "containment": 0.2917
+      },
+      {
+        "task_id": "API_019",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 197,
+        "hit_shingles": 57,
+        "containment": 0.2893
+      },
+      {
+        "task_id": "MIXIN_016",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 174,
+        "hit_shingles": 50,
+        "containment": 0.2874
+      },
+      {
+        "task_id": "MIG_007",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 214,
+        "hit_shingles": 61,
+        "containment": 0.285
+      },
+      {
+        "task_id": "MIX_104",
+        "task_family": "mixin-require",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 137,
+        "hit_shingles": 39,
+        "containment": 0.2847
+      },
+      {
+        "task_id": "FAPI_023",
+        "task_family": "fapi-blockentity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 148,
+        "hit_shingles": 42,
+        "containment": 0.2838
+      },
+      {
+        "task_id": "API_010",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 215,
+        "hit_shingles": 61,
+        "containment": 0.2837
+      },
+      {
+        "task_id": "GUI_014",
+        "task_family": "gui-be-state",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 223,
+        "hit_shingles": 63,
+        "containment": 0.2825
+      },
+      {
+        "task_id": "API_014",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 135,
+        "hit_shingles": 38,
+        "containment": 0.2815
+      },
+      {
+        "task_id": "FORGE_API_004",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 129,
+        "hit_shingles": 36,
+        "containment": 0.2791
+      },
+      {
+        "task_id": "RES_016",
+        "task_family": "res-sounds",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 86,
+        "hit_shingles": 24,
+        "containment": 0.2791
+      },
+      {
+        "task_id": "MIG_017",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 97,
+        "hit_shingles": 27,
+        "containment": 0.2784
+      },
+      {
+        "task_id": "FORGE_API_013",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 178,
+        "hit_shingles": 48,
+        "containment": 0.2697
+      },
+      {
+        "task_id": "FORGE_API_007",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 282,
+        "hit_shingles": 76,
+        "containment": 0.2695
+      },
+      {
+        "task_id": "MIX_111",
+        "task_family": "mixin-shadow",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 90,
+        "hit_shingles": 24,
+        "containment": 0.2667
+      },
+      {
+        "task_id": "MIXIN_015",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 144,
+        "hit_shingles": 38,
+        "containment": 0.2639
+      },
+      {
+        "task_id": "NET_018",
+        "task_family": "net-security",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 129,
+        "hit_shingles": 34,
+        "containment": 0.2636
+      },
+      {
+        "task_id": "MIX_112",
+        "task_family": "mixin-client",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 110,
+        "hit_shingles": 29,
+        "containment": 0.2636
+      },
+      {
+        "task_id": "MIX_105",
+        "task_family": "mixin-client",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 146,
+        "hit_shingles": 38,
+        "containment": 0.2603
+      },
+      {
+        "task_id": "GPL_010",
+        "task_family": "gameplay-interact",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 124,
+        "hit_shingles": 32,
+        "containment": 0.2581
+      },
+      {
+        "task_id": "RND_041",
+        "task_family": "render-budget",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 303,
+        "hit_shingles": 78,
+        "containment": 0.2574
+      },
+      {
+        "task_id": "FORGE_API_005",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 164,
+        "hit_shingles": 42,
+        "containment": 0.2561
+      },
+      {
+        "task_id": "MIX_108",
+        "task_family": "mixin-priority",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 127,
+        "hit_shingles": 32,
+        "containment": 0.252
+      },
+      {
+        "task_id": "MIX_107",
+        "task_family": "mixin-redirect",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 195,
+        "hit_shingles": 49,
+        "containment": 0.2513
+      },
+      {
+        "task_id": "FAPI_029",
+        "task_family": "fapi-advancement",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 104,
+        "hit_shingles": 26,
+        "containment": 0.25
+      },
+      {
+        "task_id": "MIXIN_007",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 102,
+        "hit_shingles": 25,
+        "containment": 0.2451
+      },
+      {
+        "task_id": "FAPI_026",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 99,
+        "hit_shingles": 24,
+        "containment": 0.2424
+      },
+      {
+        "task_id": "MIG_015",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 120,
+        "hit_shingles": 29,
+        "containment": 0.2417
+      },
+      {
+        "task_id": "MIXIN_008",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 83,
+        "hit_shingles": 20,
+        "containment": 0.241
+      },
+      {
+        "task_id": "RND_015",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 274,
+        "hit_shingles": 66,
+        "containment": 0.2409
+      },
+      {
+        "task_id": "RND_011",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 362,
+        "hit_shingles": 87,
+        "containment": 0.2403
+      },
+      {
+        "task_id": "API_007",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 360,
+        "hit_shingles": 86,
+        "containment": 0.2389
+      },
+      {
+        "task_id": "GUI_021",
+        "task_family": "gui-textures",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 232,
+        "hit_shingles": 55,
+        "containment": 0.2371
+      },
+      {
+        "task_id": "MIX_115",
+        "task_family": "mixin-client",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 161,
+        "hit_shingles": 38,
+        "containment": 0.236
+      },
+      {
+        "task_id": "RES_011",
+        "task_family": "res-particles",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 106,
+        "hit_shingles": 25,
+        "containment": 0.2358
+      },
+      {
+        "task_id": "FORGE_API_009",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 238,
+        "hit_shingles": 56,
+        "containment": 0.2353
+      },
+      {
+        "task_id": "RND_001",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 280,
+        "hit_shingles": 65,
+        "containment": 0.2321
+      },
+      {
+        "task_id": "RND_044",
+        "task_family": "render-transparency",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 255,
+        "hit_shingles": 59,
+        "containment": 0.2314
+      },
+      {
+        "task_id": "RES_021",
+        "task_family": "res-reload",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 148,
+        "hit_shingles": 34,
+        "containment": 0.2297
+      },
+      {
+        "task_id": "FAPI_002",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 93,
+        "hit_shingles": 21,
+        "containment": 0.2258
+      },
+      {
+        "task_id": "MIX_113",
+        "task_family": "mixin-priority",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 124,
+        "hit_shingles": 28,
+        "containment": 0.2258
+      },
+      {
+        "task_id": "RND_007",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 302,
+        "hit_shingles": 68,
+        "containment": 0.2252
+      },
+      {
+        "task_id": "RND_035",
+        "task_family": "render-resources",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 254,
+        "hit_shingles": 57,
+        "containment": 0.2244
+      },
+      {
+        "task_id": "RND_028",
+        "task_family": "render-perf",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 252,
+        "hit_shingles": 56,
+        "containment": 0.2222
+      },
+      {
+        "task_id": "FAPI_013",
+        "task_family": "fapi-loot",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 141,
+        "hit_shingles": 31,
+        "containment": 0.2199
+      },
+      {
+        "task_id": "NET_007",
+        "task_family": "net-payload",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 137,
+        "hit_shingles": 30,
+        "containment": 0.219
+      },
+      {
+        "task_id": "RND_005",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 299,
+        "hit_shingles": 65,
+        "containment": 0.2174
+      },
+      {
+        "task_id": "GPL_009",
+        "task_family": "gameplay-interact",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 97,
+        "hit_shingles": 21,
+        "containment": 0.2165
+      },
+      {
+        "task_id": "FAPI_014",
+        "task_family": "fapi-loot",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 134,
+        "hit_shingles": 29,
+        "containment": 0.2164
+      },
+      {
+        "task_id": "RND_026",
+        "task_family": "render-perf",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 281,
+        "hit_shingles": 60,
+        "containment": 0.2135
+      },
+      {
+        "task_id": "GUI_001",
+        "task_family": "gui-simple-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 197,
+        "hit_shingles": 42,
+        "containment": 0.2132
+      },
+      {
+        "task_id": "MIG_001",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 94,
+        "hit_shingles": 20,
+        "containment": 0.2128
+      },
+      {
+        "task_id": "GUI_019",
+        "task_family": "gui-standalone-network",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 174,
+        "hit_shingles": 37,
+        "containment": 0.2126
+      },
+      {
+        "task_id": "NET_004",
+        "task_family": "net-security",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 175,
+        "hit_shingles": 37,
+        "containment": 0.2114
+      },
+      {
+        "task_id": "RND_017",
+        "task_family": "render-transparency",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 247,
+        "hit_shingles": 52,
+        "containment": 0.2105
+      },
+      {
+        "task_id": "GUI_016",
+        "task_family": "gui-be-state",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 206,
+        "hit_shingles": 43,
+        "containment": 0.2087
+      },
+      {
+        "task_id": "RND_030",
+        "task_family": "render-posestack",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 269,
+        "hit_shingles": 56,
+        "containment": 0.2082
+      },
+      {
+        "task_id": "RND_010",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 399,
+        "hit_shingles": 83,
+        "containment": 0.208
+      },
+      {
+        "task_id": "RND_020",
+        "task_family": "render-transparency",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 226,
+        "hit_shingles": 47,
+        "containment": 0.208
+      },
+      {
+        "task_id": "FAPI_009",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 135,
+        "hit_shingles": 28,
+        "containment": 0.2074
+      },
+      {
+        "task_id": "BUILD_001",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 116,
+        "hit_shingles": 24,
+        "containment": 0.2069
+      },
+      {
+        "task_id": "RND_002",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 210,
+        "hit_shingles": 43,
+        "containment": 0.2048
+      },
+      {
+        "task_id": "RND_047",
+        "task_family": "render-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 217,
+        "hit_shingles": 44,
+        "containment": 0.2028
+      },
+      {
+        "task_id": "MIG_016",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 79,
+        "hit_shingles": 16,
+        "containment": 0.2025
+      },
+      {
+        "task_id": "PRJ_009",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 114,
+        "hit_shingles": 23,
+        "containment": 0.2018
+      },
+      {
+        "task_id": "RND_009",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 253,
+        "hit_shingles": 51,
+        "containment": 0.2016
+      },
+      {
+        "task_id": "RND_050",
+        "task_family": "render-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 243,
+        "hit_shingles": 49,
+        "containment": 0.2016
+      },
+      {
+        "task_id": "GUI_017",
+        "task_family": "gui-server-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 170,
+        "hit_shingles": 34,
+        "containment": 0.2
+      },
+      {
+        "task_id": "RND_053",
+        "task_family": "render-perf",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 205,
+        "hit_shingles": 41,
+        "containment": 0.2
+      },
+      {
+        "task_id": "FAPI_005",
+        "task_family": "fapi-capability",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 96,
+        "hit_shingles": 19,
+        "containment": 0.1979
+      },
+      {
+        "task_id": "MIX_114",
+        "task_family": "mixin-require",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 117,
+        "hit_shingles": 23,
+        "containment": 0.1966
+      },
+      {
+        "task_id": "GUI_030",
+        "task_family": "gui-keys",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 270,
+        "hit_shingles": 53,
+        "containment": 0.1963
+      },
+      {
+        "task_id": "PRJ_003",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 102,
+        "hit_shingles": 20,
+        "containment": 0.1961
+      },
+      {
+        "task_id": "GUI_011",
+        "task_family": "gui-menu-sync",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 222,
+        "hit_shingles": 43,
+        "containment": 0.1937
+      },
+      {
+        "task_id": "RND_024",
+        "task_family": "render-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 264,
+        "hit_shingles": 51,
+        "containment": 0.1932
+      },
+      {
+        "task_id": "GUI_036",
+        "task_family": "gui-scale",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 233,
+        "hit_shingles": 45,
+        "containment": 0.1931
+      },
+      {
+        "task_id": "RND_022",
+        "task_family": "render-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 255,
+        "hit_shingles": 49,
+        "containment": 0.1922
+      },
+      {
+        "task_id": "GUI_022",
+        "task_family": "gui-textures",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 217,
+        "hit_shingles": 41,
+        "containment": 0.1889
+      },
+      {
+        "task_id": "RND_012",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 361,
+        "hit_shingles": 68,
+        "containment": 0.1884
+      },
+      {
+        "task_id": "MIXIN_020",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 213,
+        "hit_shingles": 40,
+        "containment": 0.1878
+      },
+      {
+        "task_id": "BUILD_002",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 123,
+        "hit_shingles": 23,
+        "containment": 0.187
+      },
+      {
+        "task_id": "GUI_040",
+        "task_family": "gui-stale-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 199,
+        "hit_shingles": 37,
+        "containment": 0.1859
+      },
+      {
+        "task_id": "GUI_008",
+        "task_family": "gui-list-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 259,
+        "hit_shingles": 48,
+        "containment": 0.1853
+      },
+      {
+        "task_id": "RES_026",
+        "task_family": "res-datagen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 109,
+        "hit_shingles": 20,
+        "containment": 0.1835
+      },
+      {
+        "task_id": "GUI_039",
+        "task_family": "gui-stale-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 213,
+        "hit_shingles": 39,
+        "containment": 0.1831
+      },
+      {
+        "task_id": "BUILD_006",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 55,
+        "hit_shingles": 10,
+        "containment": 0.1818
+      },
+      {
+        "task_id": "GUI_003",
+        "task_family": "gui-simple-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 226,
+        "hit_shingles": 41,
+        "containment": 0.1814
+      },
+      {
+        "task_id": "FAPI_021",
+        "task_family": "fapi-network",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 166,
+        "hit_shingles": 30,
+        "containment": 0.1807
+      },
+      {
+        "task_id": "PRJ_007",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 144,
+        "hit_shingles": 26,
+        "containment": 0.1806
+      },
+      {
+        "task_id": "RND_006",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 244,
+        "hit_shingles": 44,
+        "containment": 0.1803
+      },
+      {
+        "task_id": "GUI_037",
+        "task_family": "gui-guard",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 201,
+        "hit_shingles": 36,
+        "containment": 0.1791
+      },
+      {
+        "task_id": "NET_001",
+        "task_family": "net-payload",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 201,
+        "hit_shingles": 36,
+        "containment": 0.1791
+      },
+      {
+        "task_id": "RND_003",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 257,
+        "hit_shingles": 46,
+        "containment": 0.179
+      },
+      {
+        "task_id": "GUI_013",
+        "task_family": "gui-menu-sync",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 241,
+        "hit_shingles": 43,
+        "containment": 0.1784
+      },
+      {
+        "task_id": "MIG_011",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 101,
+        "hit_shingles": 18,
+        "containment": 0.1782
+      },
+      {
+        "task_id": "RND_013",
+        "task_family": "render-item",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 174,
+        "hit_shingles": 31,
+        "containment": 0.1782
+      },
+      {
+        "task_id": "RND_004",
+        "task_family": "render-ber",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 248,
+        "hit_shingles": 43,
+        "containment": 0.1734
+      },
+      {
+        "task_id": "GUI_020",
+        "task_family": "gui-standalone-network",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 225,
+        "hit_shingles": 39,
+        "containment": 0.1733
+      },
+      {
+        "task_id": "MIG_020",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 156,
+        "hit_shingles": 27,
+        "containment": 0.1731
+      },
+      {
+        "task_id": "RND_008",
+        "task_family": "render-entity",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 335,
+        "hit_shingles": 57,
+        "containment": 0.1701
+      },
+      {
+        "task_id": "GUI_033",
+        "task_family": "gui-lifecycle",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 197,
+        "hit_shingles": 33,
+        "containment": 0.1675
+      },
+      {
+        "task_id": "NET_002",
+        "task_family": "net-security",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 210,
+        "hit_shingles": 35,
+        "containment": 0.1667
+      },
+      {
+        "task_id": "GUI_002",
+        "task_family": "gui-simple-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 212,
+        "hit_shingles": 35,
+        "containment": 0.1651
+      },
+      {
+        "task_id": "FAPI_019",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 147,
+        "hit_shingles": 24,
+        "containment": 0.1633
+      },
+      {
+        "task_id": "GUI_009",
+        "task_family": "gui-list-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 211,
+        "hit_shingles": 34,
+        "containment": 0.1611
+      },
+      {
+        "task_id": "MIG_019",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 106,
+        "hit_shingles": 17,
+        "containment": 0.1604
+      },
+      {
+        "task_id": "FAPI_010",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 113,
+        "hit_shingles": 18,
+        "containment": 0.1593
+      },
+      {
+        "task_id": "GUI_031",
+        "task_family": "gui-l10n",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 189,
+        "hit_shingles": 30,
+        "containment": 0.1587
+      },
+      {
+        "task_id": "FAPI_020",
+        "task_family": "fapi-registry",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 261,
+        "hit_shingles": 41,
+        "containment": 0.1571
+      },
+      {
+        "task_id": "FAPI_017",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 103,
+        "hit_shingles": 16,
+        "containment": 0.1553
+      },
+      {
+        "task_id": "GUI_035",
+        "task_family": "gui-scale",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 226,
+        "hit_shingles": 35,
+        "containment": 0.1549
+      },
+      {
+        "task_id": "GUI_024",
+        "task_family": "gui-adaptive",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 281,
+        "hit_shingles": 43,
+        "containment": 0.153
+      },
+      {
+        "task_id": "GUI_007",
+        "task_family": "gui-list-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 295,
+        "hit_shingles": 45,
+        "containment": 0.1525
+      },
+      {
+        "task_id": "RND_033",
+        "task_family": "render-light",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 259,
+        "hit_shingles": 39,
+        "containment": 0.1506
+      },
+      {
+        "task_id": "BUILD_007",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 80,
+        "hit_shingles": 12,
+        "containment": 0.15
+      },
+      {
+        "task_id": "MIG_012",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 82,
+        "hit_shingles": 12,
+        "containment": 0.1463
+      },
+      {
+        "task_id": "GUI_005",
+        "task_family": "gui-config-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 221,
+        "hit_shingles": 32,
+        "containment": 0.1448
+      },
+      {
+        "task_id": "GPL_004",
+        "task_family": "gameplay-savedata",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 159,
+        "hit_shingles": 23,
+        "containment": 0.1447
+      },
+      {
+        "task_id": "GUI_032",
+        "task_family": "gui-l10n",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 216,
+        "hit_shingles": 31,
+        "containment": 0.1435
+      },
+      {
+        "task_id": "GUI_027",
+        "task_family": "gui-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 176,
+        "hit_shingles": 25,
+        "containment": 0.142
+      },
+      {
+        "task_id": "GPL_002",
+        "task_family": "gameplay-recipe",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 127,
+        "hit_shingles": 18,
+        "containment": 0.1417
+      },
+      {
+        "task_id": "PRJ_008",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 92,
+        "hit_shingles": 13,
+        "containment": 0.1413
+      },
+      {
+        "task_id": "BUILD_014",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 57,
+        "hit_shingles": 8,
+        "containment": 0.1404
+      },
+      {
+        "task_id": "API_020",
+        "task_family": "api-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 129,
+        "hit_shingles": 18,
+        "containment": 0.1395
+      },
+      {
+        "task_id": "GUI_038",
+        "task_family": "gui-stale-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 194,
+        "hit_shingles": 27,
+        "containment": 0.1392
+      },
+      {
+        "task_id": "PRJ_006",
+        "task_family": "proj-migration",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 94,
+        "hit_shingles": 13,
+        "containment": 0.1383
+      },
+      {
+        "task_id": "GUI_028",
+        "task_family": "gui-anim",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 184,
+        "hit_shingles": 25,
+        "containment": 0.1359
+      },
+      {
+        "task_id": "RES_012",
+        "task_family": "res-particles",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 170,
+        "hit_shingles": 23,
+        "containment": 0.1353
+      },
+      {
+        "task_id": "FAPI_025",
+        "task_family": "fapi-recipe",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 52,
+        "hit_shingles": 7,
+        "containment": 0.1346
+      },
+      {
+        "task_id": "GUI_025",
+        "task_family": "gui-paged",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 250,
+        "hit_shingles": 33,
+        "containment": 0.132
+      },
+      {
+        "task_id": "NET_026",
+        "task_family": "net-security",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 77,
+        "hit_shingles": 10,
+        "containment": 0.1299
+      },
+      {
+        "task_id": "FAPI_024",
+        "task_family": "fapi-misc",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 85,
+        "hit_shingles": 11,
+        "containment": 0.1294
+      },
+      {
+        "task_id": "MIG_010",
+        "task_family": "migration-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 93,
+        "hit_shingles": 12,
+        "containment": 0.129
+      },
+      {
+        "task_id": "GUI_006",
+        "task_family": "gui-config-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 217,
+        "hit_shingles": 28,
+        "containment": 0.129
+      },
+      {
+        "task_id": "GUI_041",
+        "task_family": "gui-stale-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 202,
+        "hit_shingles": 26,
+        "containment": 0.1287
+      },
+      {
+        "task_id": "FAPI_027",
+        "task_family": "fapi-events",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 128,
+        "hit_shingles": 16,
+        "containment": 0.125
+      },
+      {
+        "task_id": "MIXIN_014",
+        "task_family": "mixin-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 128,
+        "hit_shingles": 15,
+        "containment": 0.1172
+      },
+      {
+        "task_id": "RES_004",
+        "task_family": "res-datagen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 197,
+        "hit_shingles": 23,
+        "containment": 0.1168
+      },
+      {
+        "task_id": "GUI_023",
+        "task_family": "gui-adaptive",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 224,
+        "hit_shingles": 26,
+        "containment": 0.1161
+      },
+      {
+        "task_id": "GUI_018",
+        "task_family": "gui-server-data",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 230,
+        "hit_shingles": 26,
+        "containment": 0.113
+      },
+      {
+        "task_id": "GUI_026",
+        "task_family": "gui-paged",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 294,
+        "hit_shingles": 33,
+        "containment": 0.1122
+      },
+      {
+        "task_id": "BUILD_009",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 65,
+        "hit_shingles": 7,
+        "containment": 0.1077
+      },
+      {
+        "task_id": "GUI_004",
+        "task_family": "gui-config-screen",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 218,
+        "hit_shingles": 23,
+        "containment": 0.1055
+      },
+      {
+        "task_id": "BUILD_019",
+        "task_family": "build-v2",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 114,
+        "hit_shingles": 12,
+        "containment": 0.1053
+      },
+      {
+        "task_id": "RES_013",
+        "task_family": "res-particles",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 144,
+        "hit_shingles": 15,
+        "containment": 0.1042
+      },
+      {
+        "task_id": "NET_005",
+        "task_family": "net-security",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 87,
+        "hit_shingles": 9,
+        "containment": 0.1034
+      },
+      {
+        "task_id": "GPL_024",
+        "task_family": "gameplay-interact",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 98,
+        "hit_shingles": 10,
+        "containment": 0.102
+      },
+      {
+        "task_id": "GPL_015",
+        "task_family": "gameplay-interact",
+        "corpus": "cpt-v9-full",
+        "task_shingles": 90,
+        "hit_shingles": 9,
+        "containment": 0.1
+      }
+    ]
+  },
+  "conclusion": "448 tasks flagged >= 0.10 — manual review required"
+}

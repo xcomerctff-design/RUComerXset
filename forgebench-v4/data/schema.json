@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ForgeBench v3 task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "module",
+    "task_family",
+    "task_kind",
+    "target_loader",
+    "target_version",
+    "java_version",
+    "environment_id",
+    "task_scope",
+    "instruction",
+    "context",
+    "golden_reference",
+    "eval_criteria",
+    "verification_status",
+    "evaluator_version"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]+_[0-9]{3}$"
+    },
+    "module": {
+      "enum": [
+        "api",
+        "gui",
+        "render",
+        "resources",
+        "gameplay",
+        "network",
+        "mixin",
+        "debug",
+        "build",
+        "porting",
+        "migration",
+        "gametest"
+      ]
+    },
+    "task_family": {
+      "type": "string",
+      "description": "семейство задач (template origin); сплиты не смешивают семейства"
+    },
+    "task_kind": {
+      "enum": [
+        "generate",
+        "fix",
+        "diagnose",
+        "migrate",
+        "review",
+        "redteam_valid_unusual",
+        "redteam_invalid_context",
+        "redteam_adversarial_api",
+        "redteam_wrong_version",
+        "redteam_wrong_loader",
+        "redteam_missing_dependency",
+        "redteam_malformed_resource",
+        "redteam_performance",
+        "redteam_regression"
+      ]
+    },
+    "target_loader": {
+      "enum": [
+        "forge",
+        "neoforge"
+      ]
+    },
+    "target_version": {
+      "type": "string"
+    },
+    "java_version": {
+      "type": "integer",
+      "enum": [
+        17,
+        21
+      ]
+    },
+    "environment_id": {
+      "type": "string",
+      "description": "id профиля среды: forge-1.20.1@fg6 | neoforge-1.21.1@mdg | ..."
+    },
+    "task_scope": {
+      "enum": [
+        "single_file",
+        "multi_file"
+      ]
+    },
+    "instruction": {
+      "type": "string",
+      "minLength": 40
+    },
+    "context": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "golden_reference": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "expected_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "относительные пути, ожидаемые в ответе"
+    },
+    "required_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resource_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eval_criteria": {
+      "type": "object",
+      "required": [
+        "must_compile",
+        "required_annotations",
+        "forbidden_apis",
+        "allowed_legacy_apis",
+        "gametest_required"
+      ],
+      "properties": {
+        "must_compile": {
+          "type": "boolean"
+        },
+        "required_annotations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^@",
+            "description": "только @-аннотации; токены -> required_tokens"
+          }
+        },
+        "required_tokens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_apis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowed_legacy_apis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gametest_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "execution_stages": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "syntax",
+          "compile",
+          "unittest",
+          "gametest",
+          "dedicated_server_smoke",
+          "client_smoke",
+          "visual",
+          "manual"
+        ]
+      },
+      "description": "какие этапы обязательны для полного PASS задачи"
+    },
+    "compile_required": {
+      "type": "boolean"
+    },
+    "tests_required": {
+      "type": "boolean"
+    },
+    "client_launch_required": {
+      "type": "boolean"
+    },
+    "server_launch_required": {
+      "type": "boolean"
+    },
+    "visual_test_required": {
+      "type": "boolean"
+    },
+    "expected_assertions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "машинно-проверяемые инварианты (строки-критерии)"
+    },
+    "behavior_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "инварианты поведения, проверяемые GameTest/runtime-слоем"
+    },
+    "known_edge_cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "документированные валидные альтернативы golden"
+    },
+    "insufficient_context_policy": {
+      "enum": [
+        "fail",
+        "request_info",
+        "safest_valid_interpretation"
+      ]
+    },
+    "evaluator_version": {
+      "type": "string"
+    },
+    "source_of_truth": {
+      "type": "string",
+      "description": "происхождение эталона: hand-written+docs | artifact-derived | ..."
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ссылки на артефакты проверки (javac run, jar listing...)"
+    },
+    "verification_status": {
+      "enum": [
+        "syntax_verified",
+        "static_review",
+        "compile_verified",
+        "runtime_verified",
+        "visual_verified",
+        "unverified"
+      ]
+    },
+    "fix_of": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "task_id исходной v2-задачи, если это исправленная версия"
+    }
+  },
+  "x_path_rules": {
+    "golden_reference.relative_paths": "должны начинаться с src/ и не содержать '..'",
+    "package_path_consistency": "package X.Y; <-> src/main/java/X/Y/ClassName.java"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "stage": "III",
+  "artifact": "api_evidence.csv",
+  "tasks_scanned": 401,
+  "unique_symbols": 343,
+  "rows": 1530,
+  "verdict_counts": {
+    "class_exists": 1257,
+    "external_unverified": 240,
+    "exists_indirect": 17,
+    "vanilla_missing": 5,
+    "class_missing": 8,
+    "cross_platform_ref": 3
+  },
+  "tasks_with_missing_symbols": [
+    "FAPI_018",
+    "FAPI_027",
+    "FORGE_API_008",
+    "FORGE_API_009",
+    "FORGE_API_011",
+    "FORGE_API_012",
+    "FORGE_API_013",
+    "GUI_010",
+    "GUI_015",
+    "MIG_008",
+    "MIXIN_007",
+    "PORT_004",
+    "PORT_006"
+  ],
+  "missing_symbol_total": 13,
+  "inventories": {
+    "neoforge_universal_classes": 825,
+    "neoforge_sources_classes": 931,
+    "neoforge_fml_loader_classes": 180,
+    "neoforge_bus_classes": 20,
+    "forge_universal_classes": 653,
+    "forge_sources_classes": 665,
+    "forge_fmlloader_classes": 96,
+    "forge_eventbus_classes": 29,
+    "forge_fml_family_classes": 54,
+    "vanilla_1.21.1_classes": 7927,
+    "vanilla_1.20.1_classes": 7123,
+    "mojang_libs_1.21.1_classes": 211,
+    "mojang_libs_1.20.1_classes": 207
+  },
+  "known_exceptions": {
+    "net.*.api.distmarker.*": "exists_indirect; carrier = NeoForm/Forge-patched minecraft jar; evidence: 20 neoforge-universal refs, 26 fml-loader refs, 12 userdev patch imports, 14 forge-universal refs"
+  },
+  "d1_status": {
+    "baseline_v2_tasks_with_nonexistent_api_Dist": [
+      "API_009",
+      "API_019",
+      "API_020",
+      "MIG_002",
+      "MIG_019"
+    ],
+    "v3_full_tasks_with_nonexistent_api_Dist": [],
+    "conclusion": "D1 (net.neoforged.api.Dist) present in unfixed baseline_v2, closed in forgebench_v3_full — machine-verified"
+  },
+  "confirmed_defect_rows": 13,
+  "confirmed_defect_tasks": [
+    "FAPI_018",
+    "FAPI_027",
+    "FORGE_API_008",
+    "FORGE_API_009",
+    "FORGE_API_011",
+    "FORGE_API_012",
+    "FORGE_API_013",
+    "GUI_010",
+    "GUI_015",
+    "MIG_008",
+    "MIXIN_007",
+    "PORT_004",
+    "PORT_006"
+  ]
+}
